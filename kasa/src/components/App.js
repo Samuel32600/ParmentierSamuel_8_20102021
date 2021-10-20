@@ -4,15 +4,18 @@ import '../styles/App.css'
 import Header from './Header'
 import Footer from './Footer'
 
+import{ BrowserRouter as Router} from 'react-router-dom'
+
 class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Header/>
+        <Router>
 
+          <Header/>
+          <Footer/>
 
-        
-        <Footer/>
+        </Router>
       </div>
     )
   }
