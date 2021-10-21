@@ -23,18 +23,19 @@
     width: auto;
 }
 
-.nav-header li {
+.nav-header li a {
     width: auto;
     height: 34px;
     margin-left: 57px;
     color: #FF6060;
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
+    text-decoration: none;
 
 }
 
-.border:hover {
-    border-bottom: 1px solid #FF6060;
+.border a:hover {
+    border-bottom: 2px solid #FF6060;
 }
 
 
