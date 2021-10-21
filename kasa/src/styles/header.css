@@ -7,6 +7,7 @@
     margin-top: 40px;
     align-items: center;
 }
+    
 
 .logo-header {
     border: 1px solid red;
@@ -23,7 +24,7 @@
     width: auto;
 }
 
-.nav-text{
+.nav-text {
     width: auto;
     margin-left: 57px;
     color: #FF6060;   
@@ -51,11 +52,10 @@
         height: 47px;
     }
 
-    .nav-header li {
+    .nav-text {
         height: 17px;
-        margin-left: 10px;
+        margin-left: 15px;
         font-size: 12px;
-        line-height: 17px;
         text-transform: uppercase;
     }
 }
