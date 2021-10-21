@@ -10,7 +10,7 @@ import Footer from './Footer'
 //import des pages
 import Home_Page from '../pages/Home-page'
 import Housing from '../pages/Housing'
-import Information from '../pages/Information'
+import About from '../pages/About'
 import Error404 from '../pages/Error404'
 
 
@@ -28,16 +28,16 @@ class App extends React.Component {
           <Switch>
 
             {/* Page acceuil */}
-            <Route path/>
+            <Route path="/" exact component={Home_Page}/>
 
             {/* Page des logements */}
-            <Route />
+            <Route path="/Logements" component={Housing} />
 
             {/* Page A Propos */}
-            <Route path />
+            <Route path="/A Propos" component={About} />
 
             {/* Page Erreur 404 */}
-            {/* <Route path="/error404" component={Error404} /> */}
+            <Route path="/Erreur404" component={Error404} />
 
           </Switch>
 

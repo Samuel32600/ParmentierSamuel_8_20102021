@@ -15,7 +15,7 @@ class Header extends React.Component {
                             <Link className='nav-text' to="/">Acceuil</Link>
                         </li>
                         <li className='border'>
-                            <Link className='nav-text' to="/">A Propos</Link>
+                            <Link className='nav-text' to="/About">A Propos</Link>
                         </li>
                     </ul>
                 </nav>

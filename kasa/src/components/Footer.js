@@ -7,7 +7,7 @@ class Footer extends React.Component {
         return (
             <div className='container-footer'>
                 <img src={logo_footer} className='logo-footer' alt='logo Kasa de fin de page'/>
-                <p>© 2020 Kasa. All rights reserved</p>
+                <p className='text-footer'>© 2020 Kasa. All rights reserved</p>
             </div>
         )
     }

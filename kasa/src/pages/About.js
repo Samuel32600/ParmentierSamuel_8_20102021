@@ -1,7 +1,7 @@
 import React from 'react'
-import '../styles/information.css'
+import '../styles/about.css'
 
-class Information extends React.Component {
+class About extends React.Component {
     render() {
         return (
             <div>
@@ -12,4 +12,4 @@ class Information extends React.Component {
     }
 }
 
-export default Information
+export default About
