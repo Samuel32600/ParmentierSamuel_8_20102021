@@ -1,8 +1,18 @@
 import React from 'react'
+
 // import logo from './logo.svg'
 import '../styles/App.css'
+
+//import des components
 import Header from './Header'
 import Footer from './Footer'
+
+//import des pages
+import Home_Page from '../pages/Home-page'
+import Housing from '../pages/Housing'
+import Information from '../pages/Information'
+import Error404 from '../pages/Error404'
+
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
@@ -14,19 +24,20 @@ class App extends React.Component {
         <Router>
 
           <Header />
+          <Error404/>
           <Switch>
 
             {/* Page acceuil */}
-            <Route />
+            <Route path/>
 
             {/* Page des logements */}
             <Route />
 
             {/* Page A Propos */}
-            <Route />
+            <Route path />
 
             {/* Page Erreur 404 */}
-            <Route />
+            {/* <Route path="/error404" component={Error404} /> */}
 
           </Switch>
 

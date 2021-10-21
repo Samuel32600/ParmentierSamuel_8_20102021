@@ -12,10 +12,10 @@ class Header extends React.Component {
                 <nav>
                     <ul className='nav-header'>
                         <li className='border'>
-                            <Link to="/">Acceuil</Link>
+                            <Link className='nav-text' to="/">Acceuil</Link>
                         </li>
                         <li className='border'>
-                            <Link to="/">A Propos</Link>
+                            <Link className='nav-text' to="/">A Propos</Link>
                         </li>
                     </ul>
                 </nav>
