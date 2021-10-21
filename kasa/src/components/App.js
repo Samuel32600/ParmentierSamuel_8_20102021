@@ -4,7 +4,7 @@ import '../styles/App.css'
 import Header from './Header'
 import Footer from './Footer'
 
-import{ BrowserRouter as Router, Route} from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 class App extends React.Component {
   render() {
@@ -12,8 +12,26 @@ class App extends React.Component {
       <div className="App">
 
         <Router>
-          <Route path="/" exact component={Header} />
-          <Route path="/footer" component={Footer} />
+
+          <Header />
+          <Switch>
+
+            {/* Page acceuil */}
+            <Route />
+
+            {/* Page des logements */}
+            <Route />
+
+            {/* Page A Propos */}
+            <Route />
+
+            {/* Page Erreur 404 */}
+            <Route />
+
+          </Switch>
+
+          <Footer />
+
         </Router>
 
       </div>
@@ -22,3 +40,4 @@ class App extends React.Component {
 }
 
 export default App;
+
