@@ -6,6 +6,8 @@ import '../styles/App.css'
 //import des components
 import Header from './Header'
 import Footer from './Footer'
+import Banner from './Banner'
+import bannerhome from '../assets/banner_home-page.png'
 
 //import des pages
 import Home_Page from '../pages/Home-page'
@@ -16,6 +18,7 @@ import Error404 from '../pages/Error404'
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
+
 class App extends React.Component {
   render() {
     return (
@@ -24,17 +27,18 @@ class App extends React.Component {
         <Router>
 
           <Header />
-          <Error404/>
+          <Banner picture={bannerhome} text='Chez vous, partout et ailleurs' />
+         
           <Switch>
 
             {/* Page acceuil */}
             <Route path="/" exact component={Home_Page}/>
 
             {/* Page des logements */}
-            <Route path="/Logements" component={Housing} />
+            <Route path="/Housing" component={Housing} />
 
             {/* Page A Propos */}
-            <Route path="/A Propos" component={About} />
+            <Route path="/About" component={About} />
 
             {/* Page Erreur 404 */}
             <Route path="/Erreur404" component={Error404} />
