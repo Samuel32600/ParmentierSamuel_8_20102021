@@ -1,8 +1,7 @@
 .container-banner {
     position: relative;
     display: flex;
-    justify-content: center;
-    border-radius: 25px;
+    justify-content: center;    
     margin-left: 100px;
     margin-right: 100px;
     margin-top: 69px;
@@ -13,6 +12,7 @@
     height: auto;
     object-fit: cover;
     border-radius: 25px;
+    filter: brightness(0.75);
 }
 
 .text-banner {
@@ -21,16 +21,31 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 48px;
     margin: 0;
-    top: 40%
+    top: 40%;
+   
 }
 
 
 /* format smartphone */
 @media screen and (max-width: 768px) {
+    .container-banner {
+        justify-content: flex-start;        
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 19px;
+    }
 
+    .picture-banner {        
+        border-radius: 10px;
+    }
+
+    .text-banner {        
+        font-size: 24px;
+        margin-left: 16px;   
+    }
 }
 
 /* format tablet */
 @media screen and (min-width:768px) and (max-width:992px) {
-    
+
 }

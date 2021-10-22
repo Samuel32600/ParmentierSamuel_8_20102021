@@ -1,6 +1,9 @@
 import React from 'react'
-import logo_header from '../assets/logo_header.png'
 import '../styles/header.css'
+
+//import image
+import logo_header from '../assets/logo_header.png'
+
 import { Link } from 'react-router-dom'
 
 class Header extends React.Component {

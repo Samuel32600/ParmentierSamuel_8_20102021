@@ -1,13 +1,11 @@
 import React from 'react'
+import '../styles/App.css'
 
 // import logo from './logo.svg'
-import '../styles/App.css'
 
 //import des components
 import Header from './Header'
 import Footer from './Footer'
-import Banner from './Banner'
-import bannerhome from '../assets/banner_home-page.png'
 
 //import des pages
 import Home_Page from '../pages/Home-page'
@@ -27,7 +25,6 @@ class App extends React.Component {
         <Router>
 
           <Header />
-          <Banner picture={bannerhome} text='Chez vous, partout et ailleurs' />
          
           <Switch>
 

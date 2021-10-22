@@ -1,6 +1,9 @@
 import React from 'react'
-import logo_footer from '../assets/logo_footer.png'
 import '../styles/footer.css'
+
+//import image
+import logo_footer from '../assets/logo_footer.png'
+
 
 class Footer extends React.Component {
     render() {
