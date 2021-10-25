@@ -6,16 +6,20 @@ import Banner_Home_Page from '../assets/banner_home-page.png'
 import Banner from '../components/Banner.js'
 let InfoBanner = "Chez vous, partout et ailleurs"
 
-//carte logement
-import Cards from '../components/Card.js'
+//logement
+// import Card from '../components/Card.js'
+
+
+
+
 
 class Home_Page extends React.Component {
     render() {
         return (
-
             <div>
                 <Banner picture={Banner_Home_Page} text={InfoBanner} />
-                <Cards/>
+                {/* <Card housing-cover={} /> */}
+
             </div>
         )
     }
