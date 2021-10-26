@@ -16,8 +16,6 @@ import Error404 from '../pages/Error404'
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
-
-
 class App extends React.Component {
   render() {
     return (

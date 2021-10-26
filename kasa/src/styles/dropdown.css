@@ -1,9 +1,9 @@
 .box-dropdown{
     width: 1023px;
     height: auto;
-    margin: 31px auto 0px auto;
+    margin: 31px auto 10px auto;
     background-color: #F6F6F6;
-    border-radius: 5px;     
+    border-radius: 5px;      
 }
 
 .box-title{
@@ -26,35 +26,45 @@
 
 .down{
     margin-right: 17px ;
+    width: 24px;
+    height: 14px;
 }
 
 .description-dropdown{
     width: auto;
     height: auto;
-    margin: 27px 27px 0 18px;
+    margin: 27px 27px 30px 18px;
     color: #FF6060;  
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     text-align: start;
-    border-radius: 5px;   
+    border-radius: 5px;     
 }
 
 
 
 /* format smartphone */
 @media screen and (max-width: 768px) {
-    .box-title{
-        width: auto;
-        height: 30px;
-        margin: 20px 20px 0 20px;   
+    .box-dropdown{
+        width: 335px;
+        margin: 0px auto 0px auto;        
     }
-
+    
     .title-dropdown{
         margin-left: 11px;
-        font-size: 13px;    
+        font-size: 13px;      
     }
 
+    .down{
+        margin-right: 6px ;
+        width: 15px;
+        height: 9px;
+    }
 
+    .description-dropdown{
+        margin: 17px 7px 50px 11px;
+        font-size: 12px;            
+    }
     
 }
 
