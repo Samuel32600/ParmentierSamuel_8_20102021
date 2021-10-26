@@ -1,9 +1,11 @@
 .box-dropdown{
     width: 1023px;
     height: auto;
-    margin: 31px auto 10px auto;
+    margin: auto;
     background-color: #F6F6F6;
-    border-radius: 5px;      
+    border-radius: 5px;
+    border: 1px solid blue; 
+    
 }
 
 .box-title{

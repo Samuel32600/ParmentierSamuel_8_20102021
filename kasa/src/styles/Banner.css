@@ -2,9 +2,10 @@
     position: relative;
     display: flex;
     justify-content: center;    
-    margin-left: 100px;
-    margin-right: 100px;
+    margin: auto;
     margin-top: 69px;
+    width:1240px;
+    border: 1px solid blue;
 }
 
 .picture-banner {
@@ -21,8 +22,7 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 48px;
     margin: 0;
-    top: 40%;
-   
+    top: 40%;   
 }
 
 

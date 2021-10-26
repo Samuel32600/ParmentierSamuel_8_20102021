@@ -1,0 +1,17 @@
+.container-all-housing {
+    width: 1240px;
+    border: 1px solid blue;
+    background-color:#F6F6F6;
+    border-radius: 25px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 340px);
+    grid-template-rows: auto;
+    grid-gap: 50px;
+    margin: auto;
+    justify-content: center;  
+}
+
+.container-all-housing li{
+    list-style: none;
+}
