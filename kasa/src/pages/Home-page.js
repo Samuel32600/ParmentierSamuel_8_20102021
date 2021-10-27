@@ -23,12 +23,10 @@ class Home_Page extends React.Component {
                 <ul className='container-all-housing'>
                     {listingHousing.map((oneHousing) =>
                         <li key={oneHousing.id} >
-                            <Card cover={oneHousing.cover} title={oneHousing.title} />
+                            <Card oneHousing={oneHousing} />
                         </li>
                     )}
-
                 </ul>
-
             </div>
         )
     }
