@@ -1,7 +1,7 @@
 .container-all-housing {
-    width: 1240px;
+    width: 93%;
     border: 1px solid blue;
-    background-color:#F6F6F6;
+    background-color: #F6F6F6;
     border-radius: 25px;
     padding: 0;
     display: grid;
@@ -9,9 +9,25 @@
     grid-template-rows: auto;
     grid-gap: 50px;
     margin: auto;
-    justify-content: center;  
+    justify-content: center;
 }
 
-.container-all-housing li{
+.container-all-housing li {
     list-style: none;
+}
+
+.container-all-housing li a {
+    text-decoration: none;
+}
+
+
+
+
+/* format smartphone */
+@media screen and (max-width: 768px) {
+    .container-all-housing {
+        grid-template-columns: repeat(1, 335px);
+    }
+
+
 }

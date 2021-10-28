@@ -23,7 +23,7 @@ class Router extends React.Component {
 
             // Page des logements
             {
-                path : "/Housing",
+                path : "/oneHousing/:id",
                 component : Housing
             },
 

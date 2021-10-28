@@ -25,17 +25,3 @@
 }
 
 
-
-/* format smartphone */
-@media screen and (max-width: 768px) {
-    .container-card {
-        width: 335px;
-        height: 255px;
-    }
-
-    .housing-cover {
-        width: 100%;
-        height: 200px;
-    }
-    
-}
