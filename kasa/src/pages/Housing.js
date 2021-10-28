@@ -24,10 +24,7 @@ class Housing extends React.Component {
                     <h2 className='title'>titre</h2>
                     <h3 className='location'>location</h3>
                 </div>
-                <div className='Housing-Dropdown'>
-                    <Dropdown title="Description"/>
-                    <Dropdown title="Equipements"/>
-                </div>
+                
             </div>
 
         )

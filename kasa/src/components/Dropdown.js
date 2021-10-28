@@ -7,18 +7,35 @@ import Logo_up from '../assets/up.png'
 
 class Dropdown extends React.Component {
 
+    constructor(props) {
+        super(props);
+        this.state = { isVisible: false };
+    }
+
+    showBoxDescription() {
+        this.setState({ isVisible: !this.state.isVisible })
+    }
+
     render() {
+        const isVisible = this.state.isVisible;
+        let logo;
+        let textDropdown = "";
+
+        if (isVisible === true) {            
+            logo = Logo_up
+            textDropdown = <p className='description-dropdown'>{this.props.description}</p>
+        } else {
+            logo = Logo_down
+        }
+
         return (
             <div className='box-dropdown'>
                 <div className='box-title'>
                     <p className='title-dropdown'>{this.props.title}</p>
-                    <img src={Logo_down} className='down' alt='chevron bas' />
+                    <img src={logo} onClick={this.showBoxDescription.bind(this)} className='logo' alt='chevron' />
                 </div>
-                <p className='description-dropdown'>{this.props.description}</p>
+                {textDropdown}
             </div>
-             
-
-
         )
     }
 }
