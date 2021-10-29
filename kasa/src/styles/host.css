@@ -1,0 +1,23 @@
+.container-host{
+    width: 167px;
+    height: auto;
+    border: 1px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Host-name{
+    width: 93px;
+    height: 52px;
+    color: #FF6060;;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-align: right;
+    margin:0
+}
+
+.host-picture{
+    width:64px;
+    height: 64px;
+}
