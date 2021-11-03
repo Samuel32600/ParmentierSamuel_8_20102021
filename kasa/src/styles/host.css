@@ -9,7 +9,7 @@
 
 .Host-name{
     width: 93px;
-    height: 52px;
+    height: auto;
     color: #FF6060;;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
@@ -20,4 +20,5 @@
 .host-picture{
     width:64px;
     height: 64px;
+    border-radius: 100%;
 }

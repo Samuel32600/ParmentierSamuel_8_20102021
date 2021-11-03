@@ -4,10 +4,10 @@ import '../styles/housing.css'
 //import du Dropdown
 
 //import du Tag
-
+import Tag from '../components/Tag.js'
 
 //import de l'Hote
-import Host_picture from '../assets/Host.png'
+import Host from '../components/Host.js'
 
 //import de l'evaluation
 
@@ -37,11 +37,15 @@ class Housing extends React.Component {
             this.state.elementOfHousing ? (
                 <div>
                     <div className='Housing-Title'>
-                        <p className='title'>{this.state.elementOfHousing.title}</p>
-                        <p className='location'>{this.state.elementOfHousing.location}</p>
-                        <div>
+                        <h1 className='title'>{this.state.elementOfHousing.title}</h1>
+                        <h2 className='location'>{this.state.elementOfHousing.location}</h2>
+                        <Tag tagListing={this.state.elementOfHousing.tags} />
+                    </div>
 
-                        </div>
+                    <div>
+                        <Host host_name={this.state.elementOfHousing.host.name} host_picture={this.state.elementOfHousing.host.picture} />
+                        
+
                     </div>
 
                 </div>

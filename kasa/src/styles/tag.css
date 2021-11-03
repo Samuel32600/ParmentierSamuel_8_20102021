@@ -1,16 +1,18 @@
 .container-tag{
-width: 115px;
-height: 25px;
-background-color: #FF6060;
 display: flex;
-justify-content: center;
-align-items: center;
-border-radius: 10px;
+gap: 10px;
 }
 
-
 .text-tag{
+    height: 25px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
+    border-radius: 10px;
+    background-color: #FF6060;
+    padding: 0px 20px 0 20px;
 }
