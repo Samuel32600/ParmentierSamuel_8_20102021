@@ -3,9 +3,11 @@
     display: flex;
     justify-content: center;    
     margin: auto;
-    margin-top: 69px;
+    margin-top: 49px;
+    margin-bottom: 31px;
     width:93%;
-    border: 1px solid blue;
+    height: 223px;
+    border: 1px solid yellow;
 }
 
 .picture-banner {
@@ -28,11 +30,9 @@
 
 /* format smartphone */
 @media screen and (max-width: 768px) {
-    .container-banner {
-        justify-content: flex-start;        
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top: 19px;
+    .container-banner {   
+        margin-top: 17px;
+        margin-bottom: 19px;
     }
 
     .picture-banner {        

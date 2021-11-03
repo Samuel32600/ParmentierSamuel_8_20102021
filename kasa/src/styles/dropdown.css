@@ -1,9 +1,10 @@
 .box-dropdown{
-    width: 1023px;
+    width: 65%;
     height: auto;
     margin: auto;
     background-color: #F6F6F6;
     border-radius: 5px;
+    margin-bottom: 31px;
     border: 1px solid blue; 
     
 }
@@ -23,13 +24,15 @@
     margin-left: 18px;
     color: white;  
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;      
+    font-size: 24px;
+    border: 1px solid yellow;      
 }
 
-.down{
-    margin-right: 17px ;
+.logo{
+    margin-right: 33px ;
     width: 24px;
     height: 14px;
+    border: 5px solid green;
 }
 
 .description-dropdown{
@@ -48,8 +51,8 @@
 /* format smartphone */
 @media screen and (max-width: 768px) {
     .box-dropdown{
-        width: 335px;
-        margin: 0px auto 0px auto;        
+        width:93%;
+        margin: 0px auto 20px auto;        
     }
     
     .title-dropdown{
@@ -57,14 +60,14 @@
         font-size: 13px;      
     }
 
-    .down{
+    .logo{
         margin-right: 6px ;
         width: 15px;
         height: 9px;
     }
 
     .description-dropdown{
-        margin: 17px 7px 50px 11px;
+        margin: 17px 7px 20px 11px;
         font-size: 12px;            
     }
     
