@@ -1,48 +1,52 @@
 import React from 'react'
 import '../styles/housing.css'
 
-//import dropdown
-import Dropdown from '../components/Dropdown.js'
+//import du Dropdown
 
 //import du Tag
-import Tag from '../components/Tag.js'
+
 
 //import de l'Hote
-import Host from '../components/Host.js'
 import Host_picture from '../assets/Host.png'
 
 //import de l'evaluation
-import Rating from '../components/Rating.js'
+
+//import de la page erreur
+import Error404 from './Error404.js'
 
 //constante logement
 const listingHousing = require('../data/Listing-housing.json')
 
 
+
+
 class Housing extends React.Component {
 
-    constructor(props){
-        super(props)
-        this.id = this.props.match.params.id    
+    constructor(props) {
+        super(props);
+        this.id = this.props.match.params.id
+        this.state = { elementOfHousing: null, }
     }
 
-    
+    componentDidMount() {
+        this.setState({ elementOfHousing: listingHousing.find(elementOfHousing => elementOfHousing.id === this.id) })
+    }
 
     render() {
         return (
+            this.state.elementOfHousing ? (
+                <div>
+                    <div className='Housing-Title'>
+                        <p className='title'>{this.state.elementOfHousing.title}</p>
+                        <p className='location'>{this.state.elementOfHousing.location}</p>
+                        <div>
 
-            <div>
-                <div className='Housing-Title'>
-                    <h2 className='title'>Cozy loft on the Canal Saint-Martin</h2>
-                    <h3 className='location'>Paris, Île-de-France</h3>
-                    <div>
-                        <Tag tagListing={this.oneHousing.tags}/>
+                        </div>
                     </div>
-                    <Host host_name={"Alexandre Dumas"} host_picture={Host_picture}/>
-                    <Rating/>
-                </div>
-                
-            </div>
 
+                </div>
+            ) :
+                <Error404 />
         )
     }
 }
