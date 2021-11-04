@@ -16,7 +16,7 @@ import Rating from '../components/Rating.js'
 import Error404 from './Error404.js'
 
 //import du Dropdown
-import Dropdown from'../components/Dropdown.js'
+import Dropdown from '../components/Dropdown.js'
 
 //constante logement
 const listingHousing = require('../data/Listing-housing.json')
@@ -38,25 +38,26 @@ class Housing extends React.Component {
         return (
             this.state.elementOfHousing ? (
                 <div>
-                    <div className='Housing-Title'>
-                        <h1 className='title'>{this.state.elementOfHousing.title}</h1>
-                        <h2 className='location'>{this.state.elementOfHousing.location}</h2>
-                        <Tag tagListing={this.state.elementOfHousing.tags} />
-                    </div>
-                    <div>
-                        <Host host_name={this.state.elementOfHousing.host.name} host_picture={this.state.elementOfHousing.host.picture} />
-                        <Rating star={this.state.elementOfHousing.rating}/>
-                    </div>
-                    <div>
-                        <Dropdown title={"Description"} description={this.state.elementOfHousing.description}/>
-                        <Dropdown title={"Equipements"} description= {this.state.elementOfHousing.equipments}/>
-                    </div>
-
+                    <section className='identity-housing'>
+                        <section className='housing'>
+                            <h1 className='title'>{this.state.elementOfHousing.title}</h1>
+                            <h2 className='location'>{this.state.elementOfHousing.location}</h2>
+                            <Tag tagListing={this.state.elementOfHousing.tags} />
+                        </section>
+                        <aside>
+                            <Host host_name={this.state.elementOfHousing.host.name} host_picture={this.state.elementOfHousing.host.picture} />
+                            <Rating star={this.state.elementOfHousing.rating} />
+                        </aside>
+                    </section>
+                    <section>
+                        <Dropdown title={"Description"} description={this.state.elementOfHousing.description} />
+                        <Dropdown title={"Equipements"} description={this.state.elementOfHousing.equipments} />
+                    </section>
                 </div>
-            ) :
-                <Error404 />
-        )
+                    ) :
+                    <Error404 />
+                    )
     }
 }
 
-export default Housing
+                    export default Housing

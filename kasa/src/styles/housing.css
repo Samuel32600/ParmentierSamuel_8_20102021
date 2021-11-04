@@ -1,13 +1,40 @@
+.identity-housing{
+    border:3px solid greenyellow;
+    width: 93%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 24px;
+}
+
+.housing{
+    border:1px solid green;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
 .title{
+    border: 1px solid blue;
     color: #FF6060;
     font-size: 36px;
-    width: auto;      
+    width: 100% ;     
     font-family: 'Montserrat', sans-serif;
+    text-align: start;
+    margin: 0;
+    margin-top: 5px;
+    
 }
 
 .location{
+    border: 1px solid pink;
     color: #FF6060;
     font-size: 18px;
     width: auto;      
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    margin-bottom: 23px;
 }

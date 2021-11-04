@@ -13,8 +13,8 @@ class Rating extends React.Component {
             <div className='container-rating'>
                 {QuantityOfStar.map((quantity) =>
                     this.props.star >= quantity ?
-                        <img key={quantity} src={Full_Star} alt='etoile validée'>
-                        </img> : <img key={quantity} src={Empty_Star} alt='etoile non validée'></img>
+                        <img key={quantity} src={Full_Star} className='star' alt='etoile validée'>
+                        </img> : <img key={quantity} src={Empty_Star} className='star' alt='etoile non validée'></img>
                 )}
             </div>
         )
