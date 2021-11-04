@@ -18,7 +18,7 @@ const listingHousing = require('../data/Listing-housing.json')
 class Home_Page extends React.Component {
     render() {
         return (
-            <div className='home-page'>
+            <div>
                 <Banner picture={Banner_Home_Page} text={InfoBanner} />
                 <ul className='container-all-housing'>
                     {listingHousing.map((oneHousing) =>
