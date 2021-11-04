@@ -18,11 +18,11 @@ const listingHousing = require('../data/Listing-housing.json')
 class Home_Page extends React.Component {
     render() {
         return (
-            <div>
+            <div className='home-page'>
                 <Banner picture={Banner_Home_Page} text={InfoBanner} />
                 <ul className='container-all-housing'>
                     {listingHousing.map((oneHousing) =>
-                        <li key={oneHousing.id} >
+                        <li className='card-housing' key={oneHousing.id} >
                             <Card oneHousing={oneHousing} />
                         </li>
                     )}

@@ -10,7 +10,7 @@ class Card extends React.Component {
             
             <Link key={this.props.oneHousing.id} to={{ pathname: `/oneHousing/${this.props.oneHousing.id}` }}>
 
-                <div className='container-card'>
+                <div className='card'>
                     <img src={this.props.oneHousing.cover} className='housing-cover' alt="photo du logement" />
                     <p className='title-housing'>{this.props.oneHousing.title}</p>
                 </div>

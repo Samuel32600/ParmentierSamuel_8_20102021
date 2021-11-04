@@ -30,12 +30,12 @@
 
 /* format smartphone */
 @media screen and (max-width: 768px) {
-    .container-banner {   
+    .container-banner{
         margin-top: 17px;
         margin-bottom: 19px;
     }
 
-    .picture-banner {        
+    .picture-banner-about {        
         border-radius: 10px;
     }
 
