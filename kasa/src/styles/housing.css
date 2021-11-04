@@ -1,5 +1,5 @@
-.identity-housing{
-    border:3px solid greenyellow;
+.identity-housing {
+    border: 3px solid greenyellow;
     width: 93%;
     margin: auto;
     display: flex;
@@ -8,33 +8,69 @@
     margin-bottom: 24px;
 }
 
-.housing{
-    border:1px solid green;
-    width: 80%;
+.housing {
+    width: 75%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
 }
 
-.title{
-    border: 1px solid blue;
+.title {
     color: #FF6060;
     font-size: 36px;
-    width: 100% ;     
+    width: auto;
     font-family: 'Montserrat', sans-serif;
-    text-align: start;
     margin: 0;
     margin-top: 5px;
-    
+    text-align: start;
+
 }
 
-.location{
-    border: 1px solid pink;
+.location {
     color: #FF6060;
     font-size: 18px;
-    width: auto;      
+    width: auto;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     margin-bottom: 23px;
+}
+
+.host-ratting{
+    display:flex;
+    flex-direction: column;
+   align-items: flex-end;
+}
+
+
+/* format smartphone */
+@media screen and (max-width: 768px) {
+    .identity-housing {
+        flex-direction: column;
+    }
+
+    .housing {
+        width: 100%;
+    }
+
+    .title{
+        font-size: 18px;
+    }
+
+    .location {
+        font-size: 14px;
+        margin-top: 5px;
+        margin-bottom: 12px;
+    }
+
+    .host-ratting{
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 5px;
+
+    }
+
+
 }

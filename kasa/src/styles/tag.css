@@ -1,9 +1,9 @@
-.container-tag{
-display: flex;
-gap: 10px;
+.container-tag {
+    display: flex;
+    gap: 10px;
 }
 
-.text-tag{
+.text-tag {
     height: 25px;
     width: auto;
     display: flex;
@@ -15,4 +15,15 @@ gap: 10px;
     border-radius: 10px;
     background-color: #FF6060;
     padding: 0px 20px 0 20px;
+}
+
+
+/* format smartphone */
+@media screen and (max-width: 768px) {
+    .text-tag {
+        height: 18px;
+        font-size: 10px;
+        border-radius: 5px;
+        padding: 0px 15px 0 15px;
+    }
 }

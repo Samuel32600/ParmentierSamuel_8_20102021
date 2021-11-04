@@ -44,7 +44,7 @@ class Housing extends React.Component {
                             <h2 className='location'>{this.state.elementOfHousing.location}</h2>
                             <Tag tagListing={this.state.elementOfHousing.tags} />
                         </section>
-                        <aside>
+                        <aside className='host-ratting'>
                             <Host host_name={this.state.elementOfHousing.host.name} host_picture={this.state.elementOfHousing.host.picture} />
                             <Rating star={this.state.elementOfHousing.rating} />
                         </aside>
