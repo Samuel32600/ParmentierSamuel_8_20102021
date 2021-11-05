@@ -1,7 +1,8 @@
 import React from 'react'
 import '../styles/housing.css'
 
-
+//import du Carrousel
+import Carrousel from '../components/Carrousel.js'
 
 //import du Tag
 import Tag from '../components/Tag.js'
@@ -38,6 +39,7 @@ class Housing extends React.Component {
         return (
             this.state.elementOfHousing ? (
                 <div>
+                    <Carrousel/>
                     <section className='identity-housing'>
                         <section className='housing'>
                             <h1 className='title'>{this.state.elementOfHousing.title}</h1>
