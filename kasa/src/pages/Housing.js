@@ -49,7 +49,7 @@ class Housing extends React.Component {
                             <Rating star={this.state.elementOfHousing.rating} />
                         </aside>
                     </section>
-                    <section>
+                    <section className='dropdown-housing'>
                         <Dropdown title={"Description"} description={this.state.elementOfHousing.description} />
                         <Dropdown title={"Equipements"} description={this.state.elementOfHousing.equipments} />
                     </section>

@@ -4,7 +4,8 @@
     margin: auto;
     background-color: #F7F7F7;
     border-radius: 5px;
-    margin-bottom: 31px;   
+    margin-bottom: 31px;
+    border: 1px solid green;
 }
 
 .box-title{
@@ -15,7 +16,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
+    }
 
 .title-dropdown{
     width: auto;
@@ -39,7 +40,7 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     text-align: start;
-    border-radius: 5px;     
+    border-radius: 5px;
 }
 
 
