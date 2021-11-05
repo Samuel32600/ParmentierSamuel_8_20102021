@@ -23,12 +23,13 @@ import Dropdown from '../components/Dropdown.js'
 const listingHousing = require('../data/Listing-housing.json')
 
 
+
 class Housing extends React.Component {
 
     constructor(props) {
         super(props);
         this.id = this.props.match.params.id
-        this.state = { elementOfHousing: null, }
+        this.state = { elementOfHousing: null, }       
     }
 
     componentDidMount() {
@@ -39,7 +40,7 @@ class Housing extends React.Component {
         return (
             this.state.elementOfHousing ? (
                 <div>
-                    <Carrousel/>
+                    <Carrousel photography={this.state.elementOfHousing.pictures}/>
                     <section className='identity-housing'>
                         <section className='housing'>
                             <h1 className='title'>{this.state.elementOfHousing.title}</h1>
