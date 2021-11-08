@@ -9,21 +9,35 @@ class Dropdown extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = { isVisible: false };
+        this.state = { descriptionIsVisible: false };
     }
 
     showBoxDescription() {
-        this.setState({ isVisible: !this.state.isVisible })
+        this.setState({ descriptionIsVisible: !this.state.descriptionIsVisible })
     }
 
     render() {
-        const isVisible = this.state.isVisible;
+        const descriptionIsVisible = this.state.descriptionIsVisible;
         let logo;
         let textDropdown = "";
 
-        if (isVisible === true) {            
+        if (descriptionIsVisible === true) {
+            //condition pour faire le listing des equipement
+            if (Array.isArray(this.props.description)) {
+                textDropdown =
+                    <ul className='box-listing-Equipements'>
+                        {this.props.description.map((listing_Equipements) => 
+                        <li key={listing_Equipements}>
+                            {listing_Equipements}
+                        </li>
+                        )}
+                    </ul>
+            //condition pour faire les paragraphes des description
+            } else {                
+                textDropdown =
+                    <p className='description-dropdown'>{this.props.description}</p>
+            }
             logo = Logo_up
-            textDropdown = <p className='description-dropdown'>{this.props.description}</p>
         } else {
             logo = Logo_down
         }

@@ -3,6 +3,8 @@
     width: 65%;
 }
 
+
+
 /* format smartphone */
 @media screen and (max-width: 768px) {
     .box-AllDropdown{       

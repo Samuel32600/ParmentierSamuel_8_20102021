@@ -42,6 +42,17 @@
     padding-bottom: 5px;
 }
 
+.box-listing-Equipements{
+    list-style: none;
+    color: #FF6060;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    text-align: start;
+    margin: 27px 27px 30px 18px;
+    padding:0;
+    padding-bottom: 5px;       
+}
+
 
 /* format smartphone */
 @media screen and (max-width: 768px) {
