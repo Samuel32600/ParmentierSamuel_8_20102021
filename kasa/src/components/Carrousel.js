@@ -13,6 +13,7 @@ class Carrousel extends React.Component {
         this.lengthArray = this.props.photography.length;
 
         this.state = { pictureIndex: 0 }
+     
     }
 
     //fonction image suivante
@@ -20,7 +21,7 @@ class Carrousel extends React.Component {
         let activePicture = this.state.pictureIndex
         let arrayLength = this.lengthArray
 
-        //condition tableau une image
+        //condition tableau avec une seule image
         if (arrayLength === 1) {
             return
 
@@ -45,29 +46,33 @@ class Carrousel extends React.Component {
         let activePicture = this.state.pictureIndex
         let arrayLength = this.lengthArray
 
+        //condition tableau avec une seule image
+        if (arrayLength === 1) {            
+            return
 
-        if (activePicture < arrayLength) {
-            activePicture -= 1
-        }
-
-        if (activePicture < 0) {
-            activePicture = arrayLength-1
+        } else {
+            //condition image active est inferieur au nombre total du tableau
+            if (activePicture < arrayLength) {
+                activePicture -= 1
+            }
+            //condition image active est inferieure a zéro
+            if (activePicture < 0) {
+                activePicture = arrayLength - 1
+            }
         }
 
         this.setState(
             { pictureIndex: activePicture }
         )
-
     }
-
 
 
     render() {
         return (
             <div className='container-carrousel'>
                 <img src={this.picture[this.state.pictureIndex]} className='picture-carrousel' alt='image du logement' />
-                <img src={Logo_previous} className='logo-previous' alt='feche pour image precedente' onClick={this.previousPicture.bind(this)} />
-                <img src={Logo_next} className='logo-next' alt='feche pour image suivante' onClick={this.nextPicture.bind(this)} />
+                <img src={Logo_previous} className='logo-previous' alt='feche pour image precedente' onClick={this.previousPicture.bind(this)} style={this.lengthArray === 1 ? { display: 'none' } : {}} />
+                <img src={Logo_next} className='logo-next' alt='feche pour image suivante' onClick={this.nextPicture.bind(this)} style={this.lengthArray === 1 ? { display: 'none' } : {}}/>
                 <p className='text-picture'>{((this.state.pictureIndex) + 1)}/{this.lengthArray}</p>
             </div>
         )
