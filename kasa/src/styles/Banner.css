@@ -6,10 +6,15 @@
     margin-top: 49px;
     margin-bottom: 31px;
     width:93%;
-    height: 223px;    
 }
 
+.banner-Home-Page{
+    height: 223px;
+  }
 
+.banner-About{
+    height: 223px;
+  }
 
 .picture-banner {
     width: 100%;
@@ -35,6 +40,10 @@
         margin-top: 17px;
         margin-bottom: 19px;
     }
+
+    .banner-Home-Page{
+        height: 111px;
+      }
 
     .picture-banner-about {        
         border-radius: 10px;

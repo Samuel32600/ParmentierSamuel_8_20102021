@@ -19,7 +19,7 @@ class Home_Page extends React.Component {
     render() {
         return (
             <div>
-                <Banner picture={Banner_Home_Page} text={InfoBanner} />
+                <Banner height_Banner="banner-Home-Page" picture={Banner_Home_Page} text={InfoBanner} />
                 <ul className='container-all-housing'>
                     {listingHousing.map((oneHousing) =>
                         <li className='card-housing' key={oneHousing.id} >
