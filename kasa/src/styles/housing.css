@@ -1,5 +1,4 @@
 .identity-housing {
-    border: 3px solid greenyellow;
     width: 93%;
     margin: auto;
     display: flex;
@@ -46,7 +45,11 @@
     width: 93%;   
     margin:auto;
     column-gap: 5%;
-    border: 1px solid green;
+    justify-content: space-between;
+}
+
+.Description, .Equipements{
+    width: 100%;
 }
 
 
@@ -78,5 +81,9 @@
         justify-content: space-between;
         align-items: center;
         margin-top: 5px;
+    }
+
+    .dropdown-housing{        
+        flex-direction: column;      
     }
 }

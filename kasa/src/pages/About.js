@@ -36,9 +36,11 @@ class About extends React.Component {
         return (
             <div>
                 <Banner picture={Banner_About} text={InfoBanner}/>
+                <div className='box-AllDropdown'>
                 {dropDownContent.map((oneDropdown) =>
                     <Dropdown title={oneDropdown.title} description={oneDropdown.description}/>
                 )}
+                </div>
             </div>
         )
     }

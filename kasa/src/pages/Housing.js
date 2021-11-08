@@ -53,8 +53,12 @@ class Housing extends React.Component {
                         </aside>
                     </section>
                     <section className='dropdown-housing'>
+                        <div className='Description'>
                         <Dropdown title={"Description"} description={this.state.elementOfHousing.description} />
+                        </div>
+                        <div className='Equipements'>
                         <Dropdown title={"Equipements"} description={this.state.elementOfHousing.equipments} />
+                        </div>
                     </section>
                 </div>
                     ) :

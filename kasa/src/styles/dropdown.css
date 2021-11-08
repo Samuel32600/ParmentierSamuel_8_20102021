@@ -1,18 +1,16 @@
 .box-dropdown{
-    width: 65%;
+    width: 100%;
     height: auto;
-    margin: auto;
     background-color: #F7F7F7;
-    border-radius: 5px;
-    margin-bottom: 31px;
-    border: 1px solid green;
+    border-radius: 10px;
+    margin-bottom: 31px;   
 }
 
 .box-title{
     width: 100%;
     height: 47px;
     background-color:#FF6060 ;
-    border-radius: 5px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,7 +32,7 @@
 
 .description-dropdown{
     width: auto;
-    height: auto;
+    height: 249px;
     margin: 27px 27px 30px 18px;
     color: #FF6060;  
     font-family: 'Montserrat', sans-serif;
@@ -44,13 +42,17 @@
 }
 
 
-
 /* format smartphone */
 @media screen and (max-width: 768px) {
     .box-dropdown{
-        width:93%;
-        margin: 0px auto 20px auto;        
+        width:100%;        
+        margin: 0px auto 20px auto;
+        border-radius: 5px;        
     }
+
+    .box-title{
+        border-radius: 5px;        
+        }
     
     .title-dropdown{
         margin-left: 11px;
@@ -65,11 +67,7 @@
 
     .description-dropdown{
         margin: 17px 7px 20px 11px;
-        font-size: 12px;            
+        font-size: 12px;
+        height: 145px;           
     }
 }
-
-
-
-/* format tablet */
-@media screen and (min-width:768px) and (max-width:992px) {}
