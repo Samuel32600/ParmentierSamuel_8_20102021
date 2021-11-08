@@ -32,13 +32,14 @@
 
 .description-dropdown{
     width: auto;
-    height: 249px;
+    height: auto;
     margin: 27px 27px 30px 18px;
     color: #FF6060;  
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     text-align: start;
     border-radius: 5px;
+    padding-bottom: 5px;
 }
 
 
