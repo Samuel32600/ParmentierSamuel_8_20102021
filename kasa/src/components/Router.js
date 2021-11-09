@@ -35,7 +35,7 @@ class Router extends React.Component {
 
             // Page Erreur 404
             {
-                path : "/Erreur404",
+                path : "*",
                 component : Error404
             }
         ]

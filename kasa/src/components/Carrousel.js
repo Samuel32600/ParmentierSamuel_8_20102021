@@ -70,9 +70,9 @@ class Carrousel extends React.Component {
     render() {
         return (
             <div className='container-carrousel'>
-                <img src={this.picture[this.state.pictureIndex]} className='picture-carrousel' alt='image du logement' />
-                <img src={Logo_previous} className='logo-previous' alt='feche pour image precedente' onClick={this.previousPicture.bind(this)} style={this.lengthArray === 1 ? { display: 'none' } : {}} />
-                <img src={Logo_next} className='logo-next' alt='feche pour image suivante' onClick={this.nextPicture.bind(this)} style={this.lengthArray === 1 ? { display: 'none' } : {}}/>
+                <img src={this.picture[this.state.pictureIndex]} className='picture-carrousel' alt='illustration du logement' />
+                <img src={Logo_previous} className='logo-previous' alt='feche precedente' onClick={this.previousPicture.bind(this)} style={this.lengthArray === 1 ? { display: 'none' } : {}} />
+                <img src={Logo_next} className='logo-next' alt='feche suivante' onClick={this.nextPicture.bind(this)} style={this.lengthArray === 1 ? { display: 'none' } : {}}/>
                 <p className='text-picture'>{((this.state.pictureIndex) + 1)}/{this.lengthArray}</p>
             </div>
         )

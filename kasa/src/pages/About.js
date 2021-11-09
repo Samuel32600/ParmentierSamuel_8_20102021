@@ -37,8 +37,8 @@ class About extends React.Component {
             <div>
                 <Banner height_Banner="banner-About" picture={Banner_About} text={InfoBanner} />
                 <div className='box-AllDropdown'>
-                {dropDownContent.map((oneDropdown) =>
-                    <Dropdown height_TitleDropdown="title-dropdown-About" title={oneDropdown.title} height_DescriptionDropdown="description-dropdown-About" description={oneDropdown.description}/>
+                {dropDownContent.map((oneDropdown , indexDropdown) =>
+                    <Dropdown key={indexDropdown} height_TitleDropdown="title-dropdown-About" title={oneDropdown.title} height_DescriptionDropdown="description-dropdown-About" description={oneDropdown.description}/>
                 )}
                 </div>
             </div>
