@@ -35,7 +35,7 @@ class Dropdown extends React.Component {
             //condition pour faire les paragraphes des description
             } else {                
                 textDropdown =
-                    <p className='description-dropdown'>{this.props.description}</p>
+                    <p className={`description-dropdown ${this.props.height_DescriptionDropdown}`}>{this.props.description}</p>
             }
             logo = Logo_up
         } else {
@@ -45,7 +45,7 @@ class Dropdown extends React.Component {
         return (
             <div className='box-dropdown'>
                 <div className='box-title'>
-                    <p className='title-dropdown'>{this.props.title}</p>
+                    <p className={`title-dropdown ${this.props.height_TitleDropdown}`}>{this.props.title}</p>
                     <img src={logo} onClick={this.showBoxDescription.bind(this)} className='logo' alt='chevron' />
                 </div>
                 {textDropdown}

@@ -23,13 +23,12 @@ import Dropdown from '../components/Dropdown.js'
 const listingHousing = require('../data/Listing-housing.json')
 
 
-
 class Housing extends React.Component {
 
     constructor(props) {
         super(props);
         this.id = this.props.match.params.id
-        this.state = { elementOfHousing: null, }       
+        this.state = { elementOfHousing: null, }
     }
 
     componentDidMount() {
@@ -40,7 +39,7 @@ class Housing extends React.Component {
         return (
             this.state.elementOfHousing ? (
                 <div>
-                    <Carrousel photography={this.state.elementOfHousing.pictures}/>
+                    <Carrousel photography={this.state.elementOfHousing.pictures} />
                     <section className='identity-housing'>
                         <section className='housing'>
                             <h1 className='title'>{this.state.elementOfHousing.title}</h1>
@@ -54,17 +53,17 @@ class Housing extends React.Component {
                     </section>
                     <section className='dropdown-housing'>
                         <div className='Description'>
-                        <Dropdown title={"Description"} description={this.state.elementOfHousing.description} />
+                            <Dropdown height_TitleDropdown="title-dropdown-Housing" title={"Description"} height_DescriptionDropdown="description-dropdown-Housing" description={this.state.elementOfHousing.description} />
                         </div>
                         <div className='Equipements'>
-                        <Dropdown title={"Equipements"} description={this.state.elementOfHousing.equipments} />
+                            <Dropdown height_TitleDropdown="title-dropdown-Housing" title={"Equipements"} height_DescriptionDropdown="description-dropdown-Housing" description={this.state.elementOfHousing.equipments} />
                         </div>
                     </section>
                 </div>
-                    ) :
-                    <Error404 />
-                    )
+            ) :
+                <Error404 />
+        )
     }
 }
 
-                    export default Housing
+export default Housing
